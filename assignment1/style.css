@@ -1,0 +1,29 @@
+     
+h1 {
+     text-decoration: underline;
+   }
+ #my_img {
+     margin:0px 50px 10px 5px;
+     width: 200;
+     height: 200;
+     border: 5px solid #FFD700;
+     }
+ h2 {
+    background-color: darkturquoise;padding=5px;
+       }
+ #my_name {
+font-size: 35px;
+   }
+ .body {
+   margin: 50px;
+   }
+   body {
+   border: 10px solid black;
+   padding-bottom: 100px;
+   padding-right: 100px;
+   padding-left: 100px;
+   background-color:whitesmoke;
+ }
+  u {
+    text-decoration: none;
+}
