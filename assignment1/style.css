@@ -14,9 +14,7 @@ h1 {
  #my_name {
 font-size: 35px;
    }
- .body {
-   margin: 50px;
-   }
+ 
    body {
    border: 10px solid black;
    padding-bottom: 100px;
