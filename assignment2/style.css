@@ -1,0 +1,165 @@
+*{
+   box-sizing: border-box;
+}
+#col1 {
+   background-color: #4169E1;
+   height: 1250px;
+   border-radius: 30px 0px 0px 30px;
+}
+.col-lg-10{
+   padding: 0;
+}
+#col2{
+   border-radius: 0px 30px 30px 0px;
+   padding: 2.14%;
+
+}
+.col1row1{
+   padding-top:25px;
+   padding-left:10px;
+
+}
+.col1row2{
+   padding-top: 20px;
+   padding-bottom: 250px;
+
+}
+.col1row3{
+   border-radius: 10px;
+   padding-top: 25px;
+   margin: 15px;
+   height: 450px;
+   background-color: white;
+}
+.col1row3p{
+   padding: 10px;
+}
+.col1row3p1{
+   margin-left: 20px;
+}
+.col1row3p1c1{
+   float: right;
+   text-align:center;
+}
+.col1row3p2{
+   text-align: center;
+
+}
+i{
+   padding-right:15px;
+}
+.METEOROLOGtag{
+   color: white;
+}
+.col1row2 a:hover{
+   background-color: white;
+}
+
+.col1row2 .nav-link{
+   padding-top: 20px;
+   color: white;
+}
+.search{
+   float: left;
+}
+#search-text-input{
+   float: right;
+}
+
+.bi-search{
+   background-color: #FFFAFA;
+}
+.weather_forecast{
+   margin-top: 50px;
+}
+.hotimg{
+   height: 30px;
+   width: 30px;
+   padding-right:5px;
+}
+.star_cloud{
+   height:30px;
+   width:30px;
+}
+.speedometer{
+   width: 50px;
+   height: 50px;
+   padding: 10px;
+}
+
+.citysimg{
+  height: 150px;
+  padding-right: 15px;
+  border-radius: 30px;
+
+}
+.weather_forecast{
+   padding: 0;
+}
+.weather_forecast row{
+   width: 81.19%;
+   padding: 0;
+}
+.london{
+ padding-bottom: 50px;
+
+}
+.items{
+   display: inline-flex;
+   overflow-x: scroll;
+}
+.item:hover{
+   background-color:#33FF80;
+
+}
+
+.item{
+   float: left;
+   width: 70px;
+   border: 1px solid black;
+   border-radius: 3px;
+   margin: 25px;
+   padding: 5px;
+   overflow-x: scroll;
+   display: inline-block;
+   transition-duration: 2s;
+}
+.weather_forecast li{
+   float: left;
+   width: 16.24%;
+   margin-right: 30px;
+   border: 1px;
+   border-radius: 10px;
+}
+.weather_graph .row {
+   padding: 50px;
+}
+#xaxis_content:hover{
+   background-color: #33FF80;
+}
+.weather_graph .nav{
+   padding-left: 150px;
+
+}
+@media (min-width:1500px) {
+   .citysimg{
+      height:180px;
+      width: 220px;
+   }
+   .citys{
+      text-align: center;
+   }
+   .col1row3p2{
+      margin-top: 90px;
+   }
+   #col1{
+      height: 1250px;
+   }
+   .col1row3{
+      height: 480px;
+   }
+   .col1row2{
+      padding-bottom: 330px;
+   }
+
+}
