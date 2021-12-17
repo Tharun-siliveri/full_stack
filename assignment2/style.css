@@ -163,3 +163,16 @@ i{
    }
 
 }
+.city_con-1{
+   position: relative;
+   top: -41px;
+   left: 95px; 
+   background-color: aliceblue;
+   width: 90px;
+   border-radius: 10px 0 20px 0;
+   display: flex;
+   justify-content: space-around;
+}
+.citys h6{
+   margin-top: -27px;
+}

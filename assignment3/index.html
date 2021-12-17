@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> weather forecast</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="
+      sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['11 Mon',  1000,      400],
+          ['12 Tue',  1170,      460],
+          ['13 Wed',  660,       1120],
+          ['14 Thu',  1030,      540],
+          ['15 Fri',  1170,      460],
+          ['16 Sat',  660,       1120],
+          ['17 Sun',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'weather_graph',
+          curveType: 'line',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+
+
+    </script>
+   </head>
+   <body>
+      <div class="container-fluid" >
+         <div class="row content ">
+            <div class="col-lg-2 sidenav" id="col1">
+               <div class="col1row1">
+                     <h4 class="METEOROLOGtag"><img src="pics/hot.png" alt="hot" class="hotimg">METEOROLOG</h4>
+               </div>
+               <div class="col1row2">
+                  <ul class="nav flex-column">
+                        <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" href="#" ><i class="bi bi-grid-fill"></i>Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-bar-chart-line"></i>Statitics</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-geo-alt-fill"></i>Map</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link"><i class="bi bi-calendar3"></i>calender</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link"><i class="bi bi-gear-fill"></i>Settings</a>
+                        </li>
+                  </ul>
+                     <br>
+               </div>
+
+               <div class="col1row3">
+                  <div class="col1row3p">
+                  <div class="col1row3p1">
+                     <img src="pics/star.png" alt="star_cloud" class="star_cloud" >
+                     <span class="col1row3p1c1">
+                     <h4>Today</h4>
+                     <h4>11:44</h4>
+                     <h6>mon,11 January</h6>
+                  </span>
+                  </div>
+                  <div class="col1row3p2">
+                     <h1>+4&deg;c</h1>
+                     <h3>New York</h3>
+                     <h6>United States</h6>
+                     <div class="hp">
+                        <h6>Humidity:</h6>
+                        <h6 id="per">75%</h6>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                     <h6 id="hp">precipitation:</h6>
+                     <h6 id="per">25%</h6>
+                     <div class="progress">
+                           <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                           </div>
+                     </div>
+                     <h6>Wind:<img src="pics/speedometer.png" alt="speedometer" class="speedometer">4.5km/h</h6>
+
+                  </div>
+               </div>
+            </div>
+            <!-- ending of col1 -->
+
+           <div class="col-lg-10" id="col2">
+                <div class="search">
+                      <i class="bi bi-search"></i>
+                      <span>
+                         <input type='text' placeholder='Search...' id='search-text-input'/>
+                      </span>
+                </div>
+                <br>
+                <div class="weather_forecast">
+                     <h4>Weather Forecast</h4>
+                     <div class="row">
+                        <ul class="list-inline text-center">
+                           <li>
+                               <div class="citys">
+                                 <img class="citysimg" src="pics/amsterdam.jpg" width="200px">
+                                 <div class="city_con-1">
+                                    <h3>12:31</h3>
+                                    <span><img src="pics/sun.png" style="width: 26px; margin-top: 5px;" alt=""></span>
+                                </div>
+                                 <h6>Amsterdam</h6>
+                             </div>
+                           </li>
+                           <li>
+                              <div class="citys">
+                                 <img class="citysimg" src="pics/london.jpg" width="200px">
+                                 <div class="city_con-1">
+                                    <h3>12:31</h3>
+                                    <span><img src="pics/sun.png" style="width: 26px; margin-top: 5px;" alt=""></span>
+                                </div>
+                                 <h6>london</h6>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="citys">
+                                 <img class="citysimg" src="pics/budapest.jpg" width="200px">
+                                 <div class="city_con-1">
+                                    <h3>12:31</h3>
+                                    <span><img src="pics/sun.png" style="width: 26px; margin-top: 5px;" alt=""></span>
+                                </div>
+                                 <h6>Budapest</h6>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="citys">
+                                 <img class="citysimg" src="pics/paris.jpg" width="200px">
+                                 <div class="city_con-1">
+                                    <h3>12:31</h3>
+                                    <span><img src="pics/sun.png" style="width: 26px; margin-top: 5px;" alt=""></span>
+                                </div>
+                                 <h6>Paris</h6>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="citys">
+                                 <img class="citysimg" src="pics/chicago.jpg" width="200px">
+                                 <div class="city_con-1">
+                                    <h3>12:31</h3>
+                                    <span><img src="pics/sun.png" style="width: 26px; margin-top: 5px;" alt=""></span>
+                                </div>
+                                 <h6>Chicago</h6>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+
+                </div>
+                <div class="london">
+                   <div class="row">
+                     <div class="col-10" style="font-size:1.5em; color: black;"><b>London</b></div>
+                     <div class="col-2" style="color: #979BF3; text-align: end;">Details More &nbsp<i class= "fa fa-fw fa-arrow-right"></i></div>
+                 </div>
+                   <!-- <div class="row"> -->
+                     <div class="items">
+                        <div class="item">
+                           <img src="pics/cloud.png" alt=""  height="35px" width="60px">
+                           <h6>-5/+4</h6>
+                           <h6>11 Mon</h6>
+                        </div>
+                        <div class="item">
+                           <img src="pics/sun.png" alt="" height="35px" width="60px">
+                           <h6>-5/+4</h6>
+                           <h6>12 Tue</h6>
+                        </div>
+                        <div class="item">
+                           <img src="pics/cloud.png" alt="" height="35px" width="60px">
+                           <h6>-5/+4</h6>
+                           <h6>13 Wed</h6>
+                        </div>
+                        <div class="item">
+                           <img src="pics/sun.png" alt="" height="35px" width="60px">
+                           <h6>-5/+4</h6>
+                           <h6>14 Thu</h6>
+                        </div>
+                        <div class="item">
+                           <img src="pics/cloud.png" alt="" height="35px" width="60px">
+                           <h6>-5/+4</h6>
+                           <h6>15 Fri</h6>
+                        </div>
+                        <div class="item">
+                           <img src="pics/sun.png" alt="" height="35px" width="60px">
+                           <h6>-5/+4</h6>
+                           <h6>16 Sat</h6>
+                        </div>
+                        <div class="item">
+                           <img src="pics/cloud.png" alt="" height="35px" width="60px">
+                           <h6>-5/+4</h6>
+                           <h6>17 Sun</h6>
+                        </div>
+                        <div class="item">
+                           <img src="pics/sun.png" alt="" height="35px" width="60px">
+                           <h6>-5/+4</h6>
+                           <h6>18 Mon</h6>
+                        </div>
+                        <div class="item">
+                           <img src="pics/cloud.png" alt="" height="35px" width="50px">
+                           <h6>-5/+4</h6>
+                           <h6>19 Tue</h6>
+                        </div>
+
+
+                     </div>
+
+                   <!-- </div> -->
+                </div>
+                <div class="weather_graph">
+                   <h4>Weather Graph</h4>
+                   <div class="row">
+                      <ul class="nav flex-row">
+                           <li class="nav-item" >
+                           <a class="nav-link " aria-current="page" href="#" >Day</a>
+                           </li>
+                           <li class="nav-item">
+                           <a class="nav-link active" href="#">Week</a>
+                           </li>
+                           <li class="nav-item">
+                           <a class="nav-link" href="#">10 Days</a>
+                           </li>
+                           <li class="nav-item">
+                           <a class="nav-link">15 Days</a>
+                           </li>
+                     </ul>
+                  
+                   </div>
+                      <div id="curve_chart" style="width: 1200px; height: 300px"></div>
+                </div>
+
+           </div>
+        </div>
+
+    </div>
+
+   </body>
+</html>
