@@ -63,7 +63,13 @@ i{
    float: left;
 }
 #search-text-input{
-   float: right;
+  
+}
+.massege{
+
+   margin-top: 23px;
+   padding-left: 10px;
+
 }
 
 .bi-search{
