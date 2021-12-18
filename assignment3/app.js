@@ -4,6 +4,8 @@ var place=document.querySelector('#city');
 var temp=document.querySelector('#temp');
 var country=document.querySelector('#country');
 var humidity=document.querySelector('#humidity');
+var precipitation=document.querySelector('precipitation');
+var wind=document.querySelector('wind');
 
 
 submit.addEventListener('click', function(){
@@ -19,6 +21,7 @@ submit.addEventListener('click', function(){
         place.innerHTML=placeValue;
         country.innerHTML=countryValue;
         temp.innerHTML=`${tempValue}°`;
+
         humidity.innerHTML=`${humidityvalue}%`;
     })
     .catch(err => alert("You Enter a wrong city Name"))

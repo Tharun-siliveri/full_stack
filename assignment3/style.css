@@ -62,8 +62,16 @@ i{
 .search{
    float: left;
 }
-#search-text-input{
-  
+#temp{
+   padding:70px 0 0 30px;
+   
+   text-align: center;
+   font-size: 50px;
+}
+#deg{
+   font-size: 50px;
+   display: inline-block;
+   /* text-align: center; */
 }
 .massege{
 
