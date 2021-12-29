@@ -9,7 +9,7 @@ const Post = require('./src/models/post.js');
  const app = express()
 
 // Define DB Connection
- const db = mongoose.connect('mongodb://localhost:27017/first-node-api')
+ const db = mongoose.connect('mongodb://localhost:27017/NODE-API-CRUD')
 
  app.use(bodyParser.json())
  app.use(bodyParser.urlencoded({ extended: false }))
@@ -96,7 +96,7 @@ app.delete('/posts/:id', (req, res)=>{
     });
 });
 //Running Port
- app.listen(3001, function(){
-     console.log('Server is running at port 3001...')
+ app.listen(27017, function(){
+     console.log('Server is running at port 27017...')
  })
 

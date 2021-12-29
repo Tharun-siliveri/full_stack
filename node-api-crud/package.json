@@ -10,7 +10,7 @@
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "mongoose": "^6.1.2"
+    "mongoose": "^6.1.3"
   },
   "description": ""
 }
