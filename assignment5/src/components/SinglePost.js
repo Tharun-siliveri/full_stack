@@ -10,7 +10,7 @@ const SinglePost = (props) =>{
             <div>{ description}</div>
         </div>
         <i className="trash alternate  outline icon" 
-         onClick={() => props.clickHandler(auther)}
+         onClick={() => props.clickHander(auther)}
         ></i> 
     </div> 
     )}

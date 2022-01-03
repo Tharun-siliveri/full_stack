@@ -8,7 +8,7 @@ const AllPost = (props) => {
     }
     const renderAllPosts = props.posts.map((post) =>{
         return(
-           <SinglePost post={post} clickHandler = {deletePostHandler} key={post.auther} ></SinglePost>
+           <SinglePost post={post} clickHander = {deletePostHandler} key={post.auther} ></SinglePost>
         ); 
     }
     ); 
