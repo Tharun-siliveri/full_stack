@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+ font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow:hidden ; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* nav */
+.nav{
+  position:sticky ;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-dark {
+  color :white;
+}
+nav {
+ background-color:#262626;
+}
+nav li {
+  padding:  1px 5px 1px;
+}
+#fontSizeHandler{
+    margin: -3px;
+    border: 1px solid rgb(9, 10, 9);
+}
+#helpLine1in6{
+  padding: 10px;
+}
+#slideImages{
+  height: 650px;
+}
+
+ 
+/* css for HelpLineSection */
+#helpLineSection {
+  background-color: #2A2F47;
+  color: white;
+  width:100%;
+}
+#rowInHLS{
+  padding: 15px;
+}
+#colInHLS{
+ 
+}
+#spanInHLS{
+ cursor: pointer;;
+}
+
+/* css for Vaccination Count */
+.vaccination-count{
+  padding: 50px;
+  background-color: #EB996E29;
+ 
+}
+
+/* share vaccination section css */
+
+.shareVaccinationSection{
+  padding: 30px 15px;
+  background-color: #F7FAFF;
+}
+
+/* nearest center section css */
+.nearestCenterSection{
+  background-color: #FFFFFF;
+
+}
+
+/* what is new on cowin css */
+.watsNewOnCowin{
+  background-color: #0E1229;
+  color: white;
+  padding: 60px 0px;
+  height:900px;
+}
+.accordion-button{
+  background-color: #0E1229 !important;
+  color: white !important;
+  padding:35px !important;
+}
+.accordion-body{
+  background-color: #0E1229;
+}
+
+
+
+/* international certificates css */
+.internationalCertificate{
+  background-color: #FFFFFF;
+}
+
+/* raise an issue */
+.raiseAnIssue{
+  padding: 55px;
+  margin-top: -50px;
+}
+.raiseAnIssue a{
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+
+/* easy vaccination */
+.easyVaccination{
+  padding: 60px 0px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #F7FCFF;
+}
+
+
+/* faq section css */
+.faqSection{
+  padding: 60px 0px; 
+}
+
+/* vaccination drive css */
+.vaccinationDrive{
+  background-color: #0E1229;
+  color: #FFFFFF;
+}
+
+/* our partners css */
+.ourPartners{
+  padding: 60px 0px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+
+/* footer css */
+.footer{
+  padding: 30px 60px;
+  background-color: #0E1229;
+  color:#FFFFFF;
+}
+
+/* form css */
+
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
