@@ -16,3 +16,4 @@ https://github.com/Tharun-siliveri/Cowin_Clone_React_App
 # full_stack
 my assignnments of internship
 
+## ~GEOGO TECH SOLUTION INTERNSHIP
